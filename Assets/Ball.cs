@@ -58,7 +58,7 @@ public class Ball : MonoBehaviour
             EventBus.Instance.TriggerGoal(-1);
 
 
-            Invoke("LaunchBall", 2f);
+            Invoke("LaunchBall", 0f);
         }
         if(  collision.gameObject.name == "Right Goal")
         {
@@ -72,7 +72,8 @@ public class Ball : MonoBehaviour
     public void ReestBall()
     {
 
-        Invoke("LaunchBall", 2f); 
+        LaunchBall();
+
     }
 
     private void LaunchBall()
