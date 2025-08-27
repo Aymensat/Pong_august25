@@ -72,14 +72,12 @@ public class Ball : MonoBehaviour
     public void ReestBall()
     {
 
-        transform.position = Vector3.zero;
-
         Invoke("LaunchBall", 2f); 
     }
 
     private void LaunchBall()
     {
-        rb.transform.position = Vector2.zero;
+        transform.position = Vector2.zero;
         float angle = Random.Range(0, Mathf.PI * 2);
         float speed = Random.Range(minVelocity, maxVelocity);
 
