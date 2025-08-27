@@ -56,6 +56,9 @@ public class Padel : MonoBehaviour
         {
             rb.MovePosition(rb.position - velocity * Time.fixedDeltaTime);
         }
+
+        if (transform.position.y > 3.8) transform.position = new Vector3( transform.position.x , 3.8f  , 0) ; 
+        if(transform.position.y < -3.8) transform.position = new Vector3(transform.position.x, -3.8f, 0);
     }
 
 
