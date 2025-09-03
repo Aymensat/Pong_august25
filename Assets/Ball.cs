@@ -16,7 +16,7 @@ public class Ball : MonoBehaviour
 
 
 
-    private Vector2 lastVel;
+    public Vector2 lastVel;
 
     private void Awake()
     {
